@@ -1,0 +1,51 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="DND SIEGE" content="A new way to play" />
+    <!--internal and external links such as my css, bootstrap and jquery-->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" 
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="{% static 'javascript/script.js' %}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/bbfccb4c46.js" crossorigin="anonymous"></script>
+    <title>SIEGE</title>
+</head>
+<body>
+    <div class="container text-center">
+        <div class="row justify-content-center">
+            <div class="col-6">Header</div>
+        </div>
+    </div>
+    <div class="line-break"><hr></div>
+    {% block nav %}
+    {% endblock %}
+    {% block content %}
+    {% endblock %}
+    <div class="fixed-bottom" style="background-color:grey">
+        <div id="footer-container">
+            <ul id="foot">
+                <li class="footer-item"><a id="instagram" class="footer-anchor" href="https://www.instagram.com/"
+                        target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                <li class="footer-item"><a id="facebook" class="footer-anchor" href="https://www.facebook.com/"
+                        target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
+                <li class="footer-item"><a id="twitter" class="footer-anchor" href="https://twitter.com/?lang=en"
+                        target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
+                <li class="footer-item"><a id="twitch" class="footer-anchor" href="https://www.twitch.tv/"
+                        target="_blank"><i class="fa-brands fa-twitch"></i></a></li>
+                <li class="footer-item"><a id="discord" class="footer-anchor" href="https://discord.com/"
+                        target="_blank"><i class="fa-brands fa-discord"></i></a></li>
+            </ul>
+        </div>
+    <script src="{% static 'javascript/script.js' %}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>
