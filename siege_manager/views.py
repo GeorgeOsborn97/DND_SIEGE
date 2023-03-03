@@ -11,6 +11,36 @@ class HomePage(View):
         return render(request, '../templates/index.html')
 
 
+class HowToPage(View):
+    def get(self, request):
+        return render(request, '../templates/howto.html')
+
+
+class OperationsPage(View):
+    def get(self, request):
+        operation_list = Operation.objects.all()
+
+        context = {
+            'operation_list': operation_list,
+        }
+        return render(request, '../templates/operations.html')
+
+
+class SuppliesPage(View):
+    def get(self, request):
+        supply_list = Supplies.objects.all()
+
+        context = {
+            'supply_list': supply_list,
+        }
+        return render(request, '../templates/supplies.html')
+
+
+class MoralPage(View):
+    def get(self, request):
+        return render(request, '../templates/moral.html')
+
+
 class RolesView(View):
     def get(self, request, *args, **kwargs):
         role_list = Role.objects.all()

@@ -8,16 +8,16 @@
                     <a href="{% url 'home' %}" class="nav-link">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a href="{% url 'operations' %}" class="nav-link">Operations</a>
+                    <a href="{% url 'roles' %}" class="nav-link">Roles</a>
+                </li>
+                <li class="nav-item">
+                    <a href="{% url 'howto' %}" class="nav-link">How To Play</a>
                 </li>
                 <li class="nav-item">
                     <a href="{% url 'supplies' %}" class="nav-link">Supplies</a>
                 </li>
                 <li class="nav-item">
                     <a href="{% url 'moral' %}" class="nav-link">Moral</a>
-                </li>
-                <li class="nav-item">
-                    <a href="{% url 'howto' %}" class="nav-link">How To Play</a>
                 </li>
             </ul>
         </div>
@@ -28,16 +28,11 @@
 <div class="container text-center">
     <div class="row justify-content-center">
         <div class="col-md-6">
-            {% for roles in role_list %}
+            {% for op in operation_list %}
             <article>
-                <h1>{{ roles.title }}</h1>
-                <p>{{ roles.description | safe }}</p>
+                <h1>{{ op.title }}</h1>
+                <p>{{ op.description | safe }}</p>
             </article>
-            {% endfor %}
-        </div>
-        <div class="col-md-6">
-            {% for roles in role_list %}
-            <img src="{{ roles.cover_image.url }}">
             {% endfor %}
         </div>
     </div>
