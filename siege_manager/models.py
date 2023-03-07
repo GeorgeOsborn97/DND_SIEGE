@@ -32,6 +32,7 @@ class Operation(models.Model):
         max_length=200, unique=True
     )
     description = models.TextField()
+    operation_benefit = models.TextField(default='to be added')
     resources_required = models.ManyToManyField(
         Supplies, related_name='resources_req', 
     )
@@ -40,6 +41,7 @@ class Operation(models.Model):
     )
     supply_score = models.IntegerField(default=100)
     people_score = models.IntegerField(default=100)
+    days_required = models.IntegerField(default=1)
     express_cost = models.TextField()
 
     def __str__(self):
