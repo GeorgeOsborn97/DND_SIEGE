@@ -31,7 +31,7 @@
 	    <div class="row full-height justify-content-center">
             {% for op in operation_list %}
             {% if op.title != 'All Operations' and op.title != 'Build Engines' %}
-	        <div class="col-xxl-4 text-center align-self-center py-5">
+	        <div class="col-xl-4 text-center align-self-center py-5">
                 <div class="section text-center py-5 py-md-0">
 	                <input class="pricing" type="checkbox" id="{{ op.title }}btn" name="pricing" />
 	                <label for="{{ op.title }}btn"><span class="block-diff">Operation<span
@@ -40,7 +40,7 @@
 	                    <div class="card-3d-wrapper">
                             <div class="card-front">
 	                            <div class="pricing-wrap">
-	                                <h4 class="mb-5">{{ op.title }}</h4>
+	                                <h4 class="mb-5" style="color: rgb(250, 94, 3);">{{ op.title }}</h4>
 	                                <h5 class="mb-2">Effect</h5>
 	                                <p class="mb-4">{{ op.description | safe }}</p>
                                     {% if op.days_required == 100 %}
@@ -65,7 +65,7 @@
 	                        </div>
 	                        <div class="card-back">
 	                            <div class="pricing-wrap">
-	                                <h4 class="mb-5" style="z-index: 10;">{{ op.title }}</h4>
+	                                <h4 class="mb-5" style="z-index: 10; color: rgb(250, 94, 3);">{{ op.title }}</h4>
                                     <div class="container">
                                         <div class="row justify-content-center">
                                             <div class="col-sm-6">
@@ -106,7 +106,7 @@
                                     </div>
 	                                <p class="mb-1"><i class="uil uil-location-pin-alt size-22"></i></p>
 	                                <div class="img-wrap img-2">
-	                                    <img src="https://assets.codepen.io/1462889/grass.png" alt="">
+	                                    <img src="https://res.cloudinary.com/duijsqmts/image/upload/v1678205296/36303wide_t3ts1g.jpg" alt="">
 	                                </div>
 	                                <div class="img-wrap img-4">
 	                                    <img src="" alt="" style="z-index: 5;"> <!--https://res.cloudinary.com/duijsqmts/image/upload/v1678117322/pngfind.com-castle-tower-png-1292311_ltls4e_svmp57.png-->
