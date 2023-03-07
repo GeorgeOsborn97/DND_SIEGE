@@ -23,7 +23,7 @@ class OperationsPage(View):
         context = {
             'operation_list': operation_list,
         }
-        return render(request, '../templates/operations.html')
+        return render(request, '../templates/operations.html', context)
 
 
 class SuppliesPage(View):
@@ -33,7 +33,7 @@ class SuppliesPage(View):
         context = {
             'supply_list': supply_list,
         }
-        return render(request, '../templates/supplies.html')
+        return render(request, '../templates/supplies.html', context)
 
 
 class MoralPage(View):

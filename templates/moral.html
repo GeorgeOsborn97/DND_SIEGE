@@ -25,4 +25,45 @@
 </div>
 {% endblock %}
 {% block content %}
+<div class="container text-center">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <p>
+                Each Army will have a Moral score which at the start of the game will be at 100%. If during the
+                preparation stage you decide to split the army for example:
+                You are defending a fort with 2 gates so you split your army 50/50 over each gate. These groups now have
+                their own moral score of 100%. As well as a total army moral score.
+                If group 1 gets a moral reduction of 10% then the over all army moral drops by 5%.</p>
+
+            <p>
+                If a groups health % drops below the inverse of their moral score they will begin to retreat.
+                For example. A group with 90% moral will have to drop to 10% health before they retreat.
+                A group with just 10% moral will only have to drop to 90% health before they retreat.</p>
+
+            <p>If moral is dropped to 0% the unit will attempt to flee the battle entirely
+                If total moral is dropped to 0% all units will flee</p>#
+            <p>During the battle different events will increase or reduce moral. At the end of each players turn the
+                events will be added up and the moral of the army will be changed if applicable.</p>
+
+            <h4>These conditions are:</h4>
+            <ul>
+                <li>Outnumbered -1%</li>
+                <li>Flanked -3%</li>
+                <li>Presence of enemy commander -2%</li>
+                <li>Crits -1%</li>
+                <li>Missed attacks -1%</li>
+                <li>Failed saving throws -1%</li>
+            </ul>
+            <p>If you impose these conditions on the enemy you will increase your moral by the same score.</p>
+
+            <p>Finally certain seige ops may raise or reduce the total moral of your army and the enemies to potentially
+                raise your moral over or put it under 100% before the start of the battle.</p>
+            <p>
+                It’ll be up to the siege commander to keep an eye on the moral during the battle and make decisions to
+                best combat the effects of negative moral.
+                For this reason the siege commander will always go first in the turn order during the siege.
+            </p>
+        </div>
+    </div>
+</div>
 {% endblock %}

@@ -33,11 +33,13 @@ class Operation(models.Model):
     )
     description = models.TextField()
     resources_required = models.ManyToManyField(
-        Supplies, related_name='resources_req'
+        Supplies, related_name='resources_req', 
     )
     people_required = models.ManyToManyField(
         People, related_name='people_req'
     )
+    supply_score = models.IntegerField(default=100)
+    people_score = models.IntegerField(default=100)
     express_cost = models.TextField()
 
     def __str__(self):
