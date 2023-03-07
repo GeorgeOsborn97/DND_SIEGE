@@ -27,10 +27,11 @@
 {% block content %}           
 
 <div class="section over-hide">
-	<div class="container">
+	<div id="role-container" class="container">
 	    <div class="row full-height justify-content-center">
             {% for op in operation_list %}
-	        <div class="col-4 text-center align-self-center py-5">
+            {% if op.title != 'All Operations' and op.title != 'Build Engines' %}
+	        <div class="col-xxl-4 text-center align-self-center py-5">
                 <div class="section text-center py-5 py-md-0">
 	                <input class="pricing" type="checkbox" id="{{ op.title }}btn" name="pricing" />
 	                <label for="{{ op.title }}btn"><span class="block-diff">Operation<span
@@ -42,10 +43,14 @@
 	                                <h4 class="mb-5">{{ op.title }}</h4>
 	                                <h5 class="mb-2">Effect</h5>
 	                                <p class="mb-4">{{ op.description | safe }}</p>
+                                    {% if op.days_required == 100 %}
+                                    <p class="mb-4">Days Required: Until Recalled</p>
+                                    {% else %}
                                     <p class="mb-4">Days Required: {{ op.days_required }}</p>
+                                    {% endif %}
 	                                <p class="mb-1"><i class="uil uil-location-pin-alt size-22"></i></p>
 	                                <div class="img-wrap img-2">
-                                        <img src="https://res.cloudinary.com/duijsqmts/image/upload/v1678119555/pngfind.com-medieval-castle-png-3676597_dnut77.png" alt="">
+                                        <img src="{{ op.cover_image.url }}" alt="">
 	                                </div>
 	                                <div class="img-wrap img-1">
 	                                    <img src="" alt="">
@@ -54,7 +59,7 @@
 	                                    <img src="" alt="">
 	                                </div>
 	                                <div class="img-wrap img-6">
-	                                    <img src="https://assets.codepen.io/1462889/Stone.png" alt="">
+	                                    <img src="" alt=""> <!--https://assets.codepen.io/1462889/Stone.png-->
                                     </div>
 	                            </div>
 	                        </div>
@@ -65,11 +70,19 @@
                                         <div class="row justify-content-center">
                                             <div class="col-sm-6">
                                                 <h5 class="mb-2">Supply Cost</h5>
+                                                {% if op.supply_score == 0 %}
+                                                <h5 class="mb-2">No Supplies needed</h5>
+                                                {% else %}
                                                 <h5 class="mb-2">{{ op.supply_score }}</h5>
+                                                {% endif %}
                                             </div>
                                             <div class="col-sm-6">
                                                 <h5 class="mb-2">Unit Cost</h5>
+                                                {% if op.people_score == 0 %}
+                                                <h5 class="mb-2">All civs in the city</h5>
+                                                {% else %}
                                                 <h5 class="mb-2">{{ op.people_score }}</h5>
+                                                {% endif %}
                                             </div>
                                         </div>
                                     </div>
@@ -96,13 +109,13 @@
 	                                    <img src="https://assets.codepen.io/1462889/grass.png" alt="">
 	                                </div>
 	                                <div class="img-wrap img-4">
-	                                    <img src="https://res.cloudinary.com/duijsqmts/image/upload/v1678117322/pngfind.com-castle-tower-png-1292311_ltls4e_svmp57.png" alt="" style="z-index: 5;">
+	                                    <img src="" alt="" style="z-index: 5;"> <!--https://res.cloudinary.com/duijsqmts/image/upload/v1678117322/pngfind.com-castle-tower-png-1292311_ltls4e_svmp57.png-->
 	                                </div>
 	                                <div class="img-wrap img-5">
-	                                    <img src="https://assets.codepen.io/1462889/Ivy.png" alt="">
+	                                    <img src="" alt=""> <!--https://assets.codepen.io/1462889/Ivy.png-->
                                     </div>
 	                                <div class="img-wrap img-7">
-	                                    <img src="https://assets.codepen.io/1462889/IvyRock.png" alt="">
+	                                    <img src="" alt=""> <!--https://assets.codepen.io/1462889/IvyRock.png-->
 	                                </div>
 	                            </div>
 	                        </div>
@@ -110,6 +123,7 @@
 	                </div>
 	            </div>
 	        </div>
+            {% endif %}
             {% endfor %}
         </div>
 	</div>

@@ -43,6 +43,7 @@ class Operation(models.Model):
     people_score = models.IntegerField(default=100)
     days_required = models.IntegerField(default=1)
     express_cost = models.TextField()
+    cover_image = CloudinaryField('image', default='placeholder')
 
     def __str__(self):
         return self.title

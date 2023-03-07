@@ -182,6 +182,7 @@ a:hover {
 .card-front, .card-back {
   width: 100%;
   height: 100%;
+  overflow-y: scroll;
   background-color: rgba(255, 255, 255, 1);
   position: absolute;
   border-radius: 6px;
@@ -232,7 +233,7 @@ a:hover {
   position: absolute;
   content: '';
   z-index: -1;
-  background: linear-gradient(217deg, #419456, #329977);
+  background: linear-gradient(217deg, #fdae02, #f5bc03);
   width: 70px;
   height: 70px;
   display: block;
@@ -243,7 +244,7 @@ a:hover {
   animation: border-transform 6s linear infinite;
 }
 .card-back .pricing-wrap h4:before{
-  background: linear-gradient(217deg, #648946, #a3c984);
+  background: linear-gradient(217deg, #fdae02, #f5bc03);
 }
 @keyframes border-transform{
     0%,100% { border-radius: 63% 37% 54% 46% / 55% 48% 52% 45%; } 
@@ -462,6 +463,14 @@ a:hover {
 
 .float-right {
   padding-left: 48px;
+}
+
+.block-diff-role {
+  padding-left: 10px;
+}
+
+.float-right-role {
+  padding-left: 92px;
 }
 
 .pricing-wrap h4 {
