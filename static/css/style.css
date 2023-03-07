@@ -468,3 +468,7 @@ a:hover {
   z-index: 10;
   color: #080808;
 }
+
+#role-container {
+  margin-bottom: 50px;
+}

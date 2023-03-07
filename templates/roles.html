@@ -26,13 +26,13 @@
 {% endblock %}
 {% block content %}
 <div class="section over-hide">
-	<div class="container">
+	<div id="role-container" class="container">
 	    <div class="row full-height justify-content-center">
             {% for role in role_list %}
 	        <div class="col-4 text-center align-self-center py-5">
                 <div class="section text-center py-5 py-md-0">
-	                <input class="pricing" type="checkbox" id="{{ op.title }}btn" name="pricing" />
-	                <label for="{{ op.title }}btn"><span class="block-diff">Operation<span
+	                <input class="pricing" type="checkbox" id="{{ role.title }}btn" name="pricing" />
+	                <label for="{{ role.title }}btn"><span class="block-diff">Operation<span
 	                            class="float-right">Detail</span></span></label>
 	                <div class="card-3d-wrap mx-auto">
 	                    <div class="card-3d-wrapper">
