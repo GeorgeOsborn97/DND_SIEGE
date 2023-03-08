@@ -29,10 +29,10 @@
 <div class="section over-hide">
     <div id="role-container" class="container">
 	    <div class="row justify-content-center">
-            <a href="{% url 'operations' %}">
-                <input class="pricing" type="checkbox" id="btn" name="pricing" checked />
-	            <label for="btn"><span class="block-diff">Defender<span class="float-right">Attacker</span></span></label>
-            </a>
+            <div class="buttons">
+                <button>Attacker Ops</button>
+                <button><a href="{% url 'operations' %}" class="nav-link">Defender Ops</a></button>
+            </div>
         </div>
     </div>
 	<div id="role-container" class="container">

@@ -27,11 +27,13 @@
 {% block content %}           
 
 <div class="section over-hide">
-    <div id="role-container" class="container">
-	    <div class="row justify-content-center">
-            <input class="pricing" type="checkbox" id="def-atk-btn" name="pricing" />
-	        <label for="def-atk-btn"><span class="block-diff">Defender<span class="float-right">Attacker</span></span></label>
+    <div id="role-container" class="container" style="background-color: darkgray;">
+        <div class="row justify-content-center">
+        <div class="buttons">
+            <button>Defender Ops</button>
+            <button><a href="{% url 'operationsatk' %}" class="nav-link">Attacker Ops</a></button>
         </div>
+    </div>
     </div>
 	<div id="role-container" class="container">
 	    <div class="row full-height justify-content-center">
