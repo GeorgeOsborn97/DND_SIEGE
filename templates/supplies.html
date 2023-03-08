@@ -2,21 +2,21 @@
 {% block nav %}
 <div class="container text-center">
     <div class="row justify-content-center">
-        <div class="col">
+        <div class="col-xl-12">
             <ul class="navigation">
-                <li class="nav-item">
+                <li class="nav-item col-lg-1">
                     <a href="{% url 'home' %}" class="nav-link"><img src="https://res.cloudinary.com/duijsqmts/image/upload/c_scale,w_200/v1678207001/home-logo_crofr4.png" alt=""></a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item col-lg-1">
                     <a href="{% url 'roles' %}" class="nav-link"><img src="https://res.cloudinary.com/duijsqmts/image/upload/c_scale,w_200/v1678207335/roles-logo_hg8uqn.png" alt=""></a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item col-lg-1">
                     <a href="{% url 'operations' %}" class="nav-link"><img src="https://res.cloudinary.com/duijsqmts/image/upload/c_scale,w_200/v1678207087/operations-logo_rycmoe.png" alt=""></a>
                 </li>
-                <li class="nav-item">
-                    <a href="{% url 'howto' %}" class="nav-link">><img src="https://res.cloudinary.com/duijsqmts/image/upload/c_scale,w_200/v1678207256/how-to-play-logo_h9dnol.png" alt=""></a>
+                <li class="nav-item col-lg-1">
+                    <a href="{% url 'howto' %}" class="nav-link"><img src="https://res.cloudinary.com/duijsqmts/image/upload/c_scale,w_200/v1678207256/how-to-play-logo_h9dnol.png" alt=""></a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item col-lg-1">
                     <a href="{% url 'moral' %}" class="nav-link"><img src="https://res.cloudinary.com/duijsqmts/image/upload/c_scale,w_200/v1678207208/moral-logo_ha36yp.png" alt=""></a>
                 </li>
             </ul>
@@ -25,15 +25,43 @@
 </div>
 {% endblock %}
 {% block content %}
-<div class="container text-center">
-    <div class="row justify-content-center">
-        <div class="col-md-6">
-            {% for sup in supply_list %}
-            <article>
-                <h1>{{ sup.supply }}</h1>
-                <p>{{ sup.description | safe }}</p>
-            </article>
-            {% endfor %}
+<div class="section">
+	<div id="container" class="container">
+	    <div class="row full-height justify-content-center">
+        {% for sup in supply_list %}
+        {% if sup.supply != 'None Required' %}
+        <div class="sup-col col-lg-3" ontouchstart="this.classList.toggle('hover');">
+            <div class="sup-container">
+                <div class="sup-front" style='background-image: url(https://res.cloudinary.com/duijsqmts/image/upload/v1678270785/15d660578da68731ff5c793498534f89_rhy7nl.jpg)'>
+                    <div class="sup-inner">
+                        <p>{{ sup.supply }}</p>
+                    </div>
+                </div>
+                <div class="sup-back" style="overflow-y: scroll;">
+                    <div class="sup-inner">
+                        <p>{{ sup.description | safe }}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% endif %}
+        {% endfor %}
+        {% for unit in unit_list %}
+        <div class="sup-col col-lg-3" ontouchstart="this.classList.toggle('hover');">
+            <div class="sup-container">
+                <div class="sup-front" style="background-image: url(https://res.cloudinary.com/duijsqmts/image/upload/v1678270930/HD-wallpaper-army-princess-whip-spears-cape-artwork-fantasy_ptar9o.jpg)">
+                    <div class="sup-inner">
+                        <p>{{ unit.occupation }}</p>
+                    </div>
+                </div>
+                <div class="sup-back" style="overflow-y: scroll;">
+                    <div class="sup-inner">
+                        <p>{{ unit.description | safe }}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
         </div>
     </div>
 </div>

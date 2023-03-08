@@ -9,6 +9,7 @@ class Supplies(models.Model):
         max_length=200, unique=True, primary_key=True
     )
     description = models.TextField()
+    cover_image = CloudinaryField('image', default='placeholder')
 
     def __str__(self):
         return self.supply
@@ -19,6 +20,7 @@ class People(models.Model):
         max_length=200, unique=True, primary_key=True
     )
     description = models.TextField()
+    cover_image = CloudinaryField('image', default='placeholder')
 
     def __str__(self):
         return self.occupation

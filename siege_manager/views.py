@@ -29,9 +29,11 @@ class OperationsPage(View):
 class SuppliesPage(View):
     def get(self, request):
         supply_list = Supplies.objects.all()
+        unit_list = People.objects.all()
 
         context = {
             'supply_list': supply_list,
+            'unit_list': unit_list
         }
         return render(request, '../templates/supplies.html', context)
 
