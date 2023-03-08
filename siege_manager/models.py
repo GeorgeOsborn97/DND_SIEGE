@@ -33,6 +33,7 @@ class Operation(models.Model):
     slug = models.SlugField(
         max_length=200, unique=True
     )
+    attack_or_defend = models.CharField(max_length=8, default='defend')
     description = models.TextField()
     operation_benefit = models.TextField(default='to be added')
     resources_required = models.ManyToManyField(

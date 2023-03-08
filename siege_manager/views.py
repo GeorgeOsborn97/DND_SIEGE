@@ -26,6 +26,16 @@ class OperationsPage(View):
         return render(request, '../templates/operations.html', context)
 
 
+class OperationsPageAtk(View):
+    def get(self, request):
+        operation_list = Operation.objects.all()
+
+        context = {
+            'operation_list': operation_list,
+        }
+        return render(request, '../templates/operationsatk.html', context)
+
+
 class SuppliesPage(View):
     def get(self, request):
         supply_list = Supplies.objects.all()

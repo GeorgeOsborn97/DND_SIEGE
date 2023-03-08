@@ -29,16 +29,18 @@
 <div class="section over-hide">
     <div id="role-container" class="container">
 	    <div class="row justify-content-center">
-            <input class="pricing" type="checkbox" id="def-atk-btn" name="pricing" />
-	        <label for="def-atk-btn"><span class="block-diff">Defender<span class="float-right">Attacker</span></span></label>
+            <a href="{% url 'operations' %}">
+                <input class="pricing" type="checkbox" id="btn" name="pricing" checked />
+	            <label for="btn"><span class="block-diff">Defender<span class="float-right">Attacker</span></span></label>
+            </a>
         </div>
     </div>
 	<div id="role-container" class="container">
 	    <div class="row full-height justify-content-center">
             {% for op in operation_list %}
             {% if op.title != 'All Operations' and op.title != 'Build Engines' %}
-            {% if op.attack_or_defend == 'defend' %}
-	        <div class="col-xl-4 text-center align-self-center py-5 defender">
+            {% if op.attack_or_defend != 'defend' %}
+	        <div class="col-xl-4 text-center align-self-center py-5">
                 <div class="section text-center py-5 py-md-0">
 	                <input class="pricing" type="checkbox" id="{{ op.title }}btn" name="pricing" />
 	                <label for="{{ op.title }}btn"><span class="block-diff">Operation<span

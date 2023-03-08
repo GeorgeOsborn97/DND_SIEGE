@@ -23,6 +23,11 @@ urlpatterns = [
         name='operations'
     ),
     path(
+        'operationsatk',
+        views.OperationsPageAtk.as_view(),
+        name='operationsatk'
+    ),
+    path(
         'moral',
         views.MoralPage.as_view(),
         name='moral'
