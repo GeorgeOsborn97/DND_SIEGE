@@ -18,6 +18,11 @@ urlpatterns = [
         name='howto'
     ),
     path(
+        'howtoplayers',
+        views.HowToPlayers.as_view(),
+        name='howtoplayers'
+    ),
+    path(
         'operations',
         views.OperationsPage.as_view(),
         name='operations'

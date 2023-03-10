@@ -1,0 +1,268 @@
+{% extends 'base.html' %}
+{% block nav %}
+<div class="container text-center">
+    <div class="row justify-content-center">
+        <div class="col-xl-12">
+            <ul class="navigation">
+                <li class="nav-item col-lg-1">
+                    <a href="{% url 'home' %}" class="nav-link"><img src="https://res.cloudinary.com/duijsqmts/image/upload/c_scale,w_200/v1678207001/home-logo_crofr4.png" alt=""></a>
+                </li>
+                <li class="nav-item col-lg-1">
+                    <a href="{% url 'roles' %}" class="nav-link"><img src="https://res.cloudinary.com/duijsqmts/image/upload/c_scale,w_200/v1678207335/roles-logo_hg8uqn.png" alt=""></a>
+                </li>
+                <li class="nav-item col-lg-1">
+                    <a href="{% url 'operations' %}" class="nav-link"><img src="https://res.cloudinary.com/duijsqmts/image/upload/c_scale,w_200/v1678207087/operations-logo_rycmoe.png" alt=""></a>
+                </li>
+                <li class="nav-item col-lg-1">
+                    <a href="{% url 'supplies' %}" class="nav-link"><img src="https://res.cloudinary.com/duijsqmts/image/upload/c_scale,w_200/v1678207136/supplies-logo_lzkytt.png" alt=""></a>
+                </li>
+                <li class="nav-item col-lg-1">
+                    <a href="{% url 'moral' %}" class="nav-link"><img src="https://res.cloudinary.com/duijsqmts/image/upload/c_scale,w_200/v1678207208/moral-logo_ha36yp.png" alt=""></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+{% endblock %}
+{% block content %}
+<div class="section">
+    <div id="container" class="container howto">
+        <div class="row justify-content-left">
+            <div class="col-lg-9">
+                <h2>Before the Game</h2>
+                <article>
+                    <div class="accordian accordion-flush">
+                        <div class="accordian-item">
+                            <h3 class="accordian-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                    aria-controls="flush-collapseOne">
+                                    Selecting Roles
+                                </button>
+                            </h3>
+                            <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    <p>Prior to the game your DM may allow you to take up specific roles within the management of a siege. These include: Siege Commander, City Watch Commander, Spy/Scout Master, Master Builder, Arcane Warden and Defender of the Faith.
+                                        The Roles available will depend on your DM, some roles may not be able to be selected if it doesn't fit the story or location of the siege.
+                                        By taking a role you will gain certain responsibilities, the first of ehich is you will get a say in the operations that a ran in preporation for the siege, secondly you will have the ability to go hands on in an operation
+                                         reducing it's cost. Finally during the battle you may have a battalion of troops to lead as well as having a direct impact on the troops moral which is key to succeding in battle.
+                                        "Note: It is not essential to take a roll, if your character does not fit a role you don't need to take one. All roles can be reskinned to a more fitting role for the setting, You may also discuss with your DM about homebrewing a role for you."
+                                        DM's may choose to have NPC's take roles in certain instances such as if the party has very low standing in the area of the siege or if no player wishes to take a role that is essential to the story.
+                                    </p>
+                                    <p>
+                                        Basically roles allow you as a player to have a hand in the planning and execution of the battle, Roles have the ability to increase the effeciency of operations,
+                                        During the battle players that have taken a role also have an impact on the moral of the soldiers fighting which may turn the tide of the battle.
+                                        Prior to a Siege game take a look at the different roles and what they can do, discuss with your fellow players and DM to decide which role is right for you. Again taking a role is not essential.
+                                    </p>
+                                    <h5>A Note on the Siege Commander</h5>
+                                    <p>
+                                        The Siege Commander is the most important role, the DM may decide that a king, Queen or Lord may take this role but if you as a player get the chance to be Siege Commander you will have additional responsibilities to keep in mind prior and during the battle.
+                                        A Siege Commander has the final say on what operations are ran and when these operations are ran, they also have the task of organising the troops, deciding where to place them, how to split them and who is leading them on the field of battle. 
+                                        During the battle the Siege Commander has the ability to give orders over the whole battle field. Because of this they will always go first in the turn order. They also have a larger impact on the moral of the troops.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordian-item">
+                            <h3 class="accordian-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapsetwo" aria-expanded="false"
+                                    aria-controls="flush-collapsetwo">
+                                    Know your assets and plan ahead
+                                </button>
+                            </h3>
+                            <div id="flush-collapsetwo" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingtwo" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    <p>
+                                        It is extreamly important to know your supply scotre, unit scotre and how much time you have. All the operations have a cost and you may not be 
+                                        able to afford to do everything you would like to do so planning is key. It is also important to keep an eye on the supplies throughout the entire preporation
+                                        period. The enemy may try to steal supplies or hinder your operations which may have a drastic impact on the game so protecting and managing your supplies, manpower and time is essential.     
+                                    </p>
+                                    <h5>Have a plan B.</h5>
+                                    <p>
+                                        It is also unlikely you are going to get all your operations done with no issues, The enemy will make it difficult for you so don't bank on getting all your first choices done.
+                                        Plan for what happens if the enemy steals supplies, plan for what happens if the enemy sabatages your walls. and dont be afraid to hit back. just be aware of of the time. you want all your operations done before the enemy attacks.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordian-item">
+                            <h3 class="accordian-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapsethree" aria-expanded="false"
+                                    aria-controls="flush-collapsethree">
+                                    Know your operations
+                                </button>
+                            </h3>
+                            <div id="flush-collapsethree" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingthree" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    <p>
+                                        There is a variety of operations that you may choose to complete in preporation for the coming battle. However they all have a supply cost, unit cost and require time to complete.
+                                        the management of these 3 things will be key to your success. As players you may all discuss what operations are most important, but its up the Siege commander to dicide on what goes ahead.
+                                    </p>
+                                    <p>
+                                        Each operation has a supply score and a list of supplies that can make up the score. They also have a unit score with a list of units that can make up this score. Take for instance Reinforce Walls and Gates.
+                                        This operation has a supply score of 70. The list of supplies you may use includes, Stone, Wood, Metal and Misc. this means you could use 70 points of Wood to complete this operation. Or you may split the cost and use
+                                        20 points of Wood, 20 points of stone and 30 points of metal for instance. This operation also has a unit score of 20. The units available are Civs, Builders, and Infantry. The same applies we can take 20 points of one group, or split the cost out.
+                                        This operation takes 2 days for each portion of wall or gate house, so after 2 days you coud of reinforced 1 Gate House, the materials used are gone forever but the units are returned to the pool and can be used again in another operation.
+                                        Time management and Managemnt of resources is crucial.
+                                    </p>
+                                    <p>
+                                        Operations can also be accelerated by adding in a commander that can help in that operation or by doubling the unit score. Accelertaing an operation can have severel effects such as reducing the time taken, increasing the effectiveness of the operation or reducing the supplies used. 
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordian-item">
+                            <h3 class="accordian-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapsefour" aria-expanded="false"
+                                    aria-controls="flush-collapsefour">
+                                    Be adaptable
+                                </button>
+                            </h3>
+                            <div id="flush-collapsefour" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingfour" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    <p>
+                                        Just to reiterate it's important to be adaptable. A siege is an ever changing enviroment and from day to day the optimal strategy may change. It'll be up to you to judge the conditions and plan appropriatly, convincing the Siege Commander to change their plans if needs be. 
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </div>
+    <div id="container" class="container howto">
+        <div class="row justify-content-left">
+            <div class="col-lg-9">
+                <h2>During the Game</h2>
+                <article>
+                    <div class="accordian accordion-flush">
+                        <div class="accordian-item">
+                            <h3 class="accordian-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                    aria-controls="flush-collapseOne">
+                                    Operations
+                                </button>
+                            </h3>
+                            <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    <p>
+                                        Operations can be ran in a variety of ways, and not all are guarenteed to be a success. Operations such as increasing patrols need no check, but operations such as Steal plans do. 
+                                        Some DM's may just ask for a series of checks such as stealth and perception checks. Others may have you play out the scouting mission. Be aware operations that require entering enemy camps may go wrong and you could 
+                                        fail in your mission or even loose those units. The first day is pivitol you want to set off running, ideally all players should be involved in some kind of operation. Be aware the enemy will be running operations of their own, 
+                                        you may end up coming face to face with enemy scouting parties so be prepared for anything.
+                                    </p>
+                                    <p>
+                                        It is a good idea to discuss the events of a previous day and plans for the next day with your fellow players. Enemy operations will be constantly ongoing and you may start to see evidence of this.
+                                        If the enemy has got in and stolen supplies a change of tactic may be required for the next few days as you may no longer be able to afford an operation. Further more with the completion of your own 
+                                        operations you may decide a chnage in your approach is needed. If you stole the enemies plans you may realise you are reinforcing the wrong walls, maybe you learn of special units and can now design traps to deal with them. 
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordian-item">
+                            <h3 class="accordian-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapsethree" aria-expanded="false"
+                                    aria-controls="flush-collapsethree">
+                                    Final Preperation
+                                </button>
+                            </h3>
+                            <div id="flush-collapsethree" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingthree" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    <p>
+                                        The eve of battle now looms and time is up. No more operations can be ran so what's to do. It is now the time for the siege commander to assign players to units and units to positions.
+                                        Initial orders can also be given such as when to fire an intial volley or when to spring a trap.
+                                        "Note: To see how units and battalions work take a look at the supplies Page."
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordian-item">
+                            <h3 class="accordian-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapsefour" aria-expanded="false"
+                                    aria-controls="flush-collapsefour">
+                                    The Battle begins
+                                </button>
+                            </h3>
+                            <div id="flush-collapsefour" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingfour" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    <p>
+                                        The enemy appear on the horizon, marching towards your walls. Everybody rolls initiative. 
+                                        The Siege Commanders will always go first. The Siege Commander with the higher initaitive kick us off.
+                                        All commanders can use a free action to "Give Orders" A commander of a battlion may give orders to their units. A Siege commander can give orders to the entire army and players/other commanders
+                                        despite distance between them.
+                                    </p>
+                                    <p>
+                                        Moral is going to instantly start to take effect ensure you are familiar with the moral system. To read up on it go over to the MOral page.
+                                    </p>
+                                    <p>
+                                        A player that is in charge of a battalion will role damage and saving throws for all units within that battalion. How Damage and Health works is all in the supplies page if you need a refresher.
+                                        Initally battles will take a more top down perpestective, players will be rolling for vollies of arrows, saving throws against catapults and firing your own siege engines back at the enemy. Once an enemy battalion reaches the walls or breaches a positions 
+                                        the DM may choose to take it into a more focused battle. These will be one on one or (more depending on the enemies) against a player. For instance the city watch commander is holding a gate house with a battlion of infantry that is breached by an enemy ram.
+                                        On the city commanders turn we go to a battle between him and an enemy such as a goblin chief. The player and chief will battle in standard 5e rules one on one. At the end of each turn the player will role the damage of his battalion against the enemies battalion. and vic versa.
+                                        The player will have to keep on eye on not just his health but his battalions health as well as their moral for if the battalion falls more enemies may make enter the fight with the chief.
+                                        "Note A Siege commander at any point may call a retreat of his fighting commander if they feel the fight is going the wrong way, or they may call another player or battalion to aid. Any help called in will take at least 1 round to enter the fight."  
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordian-item">
+                            <h3 class="accordian-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapsesix" aria-expanded="false"
+                                    aria-controls="flush-collapsesix">
+                                    Shifting tides
+                                </button>
+                            </h3>
+                            <div id="flush-collapsesix" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingsix" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    <p>
+                                        The battle field is an ever shifting landscape and one decision can make or break the siege. If the battle starts to swing against you do not be afraid to retreat. A well prepared commander knows that
+                                        sometimes you must regroup and reasses in the misdt of battle. If your walls are breached and its looking like your forces may get split retreating is a very viable option. 
+                                        It's a Siege commanders responsibility to call a full retreat but As a commander of a battalion you may call your forces to retreat yourself though that may leave others vunerable.
+                                    </p>
+                                    <p>
+                                        If you however see a positive swing and feel victory is assured you have other decisions to make, do you ride out and cut down your enemy, or let them limp back and send a message of your might?
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordian-item">
+                            <h3 class="accordian-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseeight" aria-expanded="false"
+                                    aria-controls="flush-collapseeight">
+                                    Post Battle
+                                </button>
+                            </h3>
+                            <div id="flush-collapseeight" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingeight" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    <p>
+                                        So the battle is over but what did the victory cost? was it worth the loss? what happens now? Or maybe the battles lost and you awken to find yourselves being carted off to a 
+                                        orc fighting pit, or the work the mines of an enemy faction or maybe you are off to be tortued for information. Whatever happens next is up to you.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

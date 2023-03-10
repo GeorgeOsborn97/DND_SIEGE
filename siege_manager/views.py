@@ -16,6 +16,11 @@ class HowToPage(View):
         return render(request, '../templates/howto.html')
 
 
+class HowToPlayers(View):
+    def get(self, request):
+        return render(request, '../templates/howtoplayers.html')
+
+
 class OperationsPage(View):
     def get(self, request):
         operation_list = Operation.objects.all()
