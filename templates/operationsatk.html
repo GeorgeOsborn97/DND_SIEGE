@@ -30,8 +30,8 @@
     <div id="role-container" class="container" style="background-color: darkgray; padding: 0;">
 	    <div class="row justify-content-center">
             <div class="buttons">
-                <button>Attacker Ops</button>
-                <button><a href="{% url 'operations' %}" class="nav-link">Defender Ops</a></button>
+                <button><h1 class="script-titles">Attacker Ops</h1></button>
+                <button><a href="{% url 'operations' %}" class="nav-link"><h1 class="script-titles">Defender Ops</h1></a></button>
             </div>
         </div>
     </div>
@@ -49,15 +49,15 @@
 	                    <div class="card-3d-wrapper">
                             <div class="card-front">
 	                            <div class="pricing-wrap">
-	                                <h4 class="mb-5" style="color: rgb(250, 94, 3);">{{ op.title }}</h4>
-	                                <h5 class="mb-2">Effect</h5>
-	                                <p class="mb-4">{{ op.description | safe }}</p>
+	                                <h4 class="mb-5 script-titles" style="color: rgb(250, 94, 3);">{{ op.title }}</h4>
+	                                <h5 class="mb-2 script-text">Effect</h5>
+	                                <p class="mb-4 script-text">{{ op.description | safe }}</p>
                                     {% if op.days_required == 100 %}
-                                    <p class="mb-4">Days Required: Until Recalled</p>
+                                    <p class="mb-4 script-text">Days Required: Until Recalled</p>
                                     {% else %}
-                                    <p class="mb-4">Days Required: {{ op.days_required }}</p>
+                                    <p class="mb-4 script-text">Days Required: {{ op.days_required }}</p>
                                     {% endif %}
-	                                <p class="mb-1"><i class="uil uil-location-pin-alt size-22"></i></p>
+	                                <p class="mb-1 script-text"><i class="uil uil-location-pin-alt size-22"></i></p>
 	                                <div class="img-wrap img-2">
                                         <img src="{{ op.cover_image.url }}" alt="">
 	                                </div>
@@ -74,23 +74,23 @@
 	                        </div>
 	                        <div class="card-back">
 	                            <div class="pricing-wrap">
-	                                <h4 class="mb-5" style="z-index: 10; color: rgb(250, 94, 3);">{{ op.title }}</h4>
+	                                <h4 class="mb-5 script-title" style="z-index: 10; color: rgb(250, 94, 3);">{{ op.title }}</h4>
                                     <div class="container">
                                         <div class="row justify-content-center">
                                             <div class="col-sm-6">
-                                                <h5 class="mb-2">Supply Cost</h5>
+                                                <h5 class="mb-2 script-text">Supply Cost</h5>
                                                 {% if op.supply_score == 0 %}
-                                                <h5 class="mb-2">No Supplies needed</h5>
+                                                <h5 class="mb-2 script-text">No Supplies needed</h5>
                                                 {% else %}
-                                                <h5 class="mb-2">{{ op.supply_score }}</h5>
+                                                <h5 class="mb-2 script-text">{{ op.supply_score }}</h5>
                                                 {% endif %}
                                             </div>
                                             <div class="col-sm-6">
-                                                <h5 class="mb-2">Unit Cost</h5>
+                                                <h5 class="mb-2 script-text">Unit Cost</h5>
                                                 {% if op.people_score == 0 %}
-                                                <h5 class="mb-2">All civs in the city</h5>
+                                                <h5 class="mb-2 script-text">All civs in the city</h5>
                                                 {% else %}
-                                                <h5 class="mb-2">{{ op.people_score }}</h5>
+                                                <h5 class="mb-2 script-text">{{ op.people_score }}</h5>
                                                 {% endif %}
                                             </div>
                                         </div>
@@ -100,14 +100,14 @@
                                             <div class="col-sm-6">
                                                 <ul id="sup_list">
                                                     {% for sup in op.resources_required.all %}
-	                                                <li>{{ sup }}</li>
+	                                                <li class="script-text">{{ sup }}</li>
                                                     {% endfor %}
                                                 </ul>
                                             </div>
                                             <div class="col-sm-6">
                                                 <ul id="sup_list">
                                                     {% for unit in op.people_required.all %}
-	                                                <li>{{ unit }}</li>
+	                                                <li class="script-text">{{ unit }}</li>
                                                     {% endfor %}
                                                 </ul>
                                             </div>

@@ -39,7 +39,7 @@
                             <div class="card-front">
 	                            <div class="pricing-wrap">
 	                                <h4 class="mb-5" style="color: rgb(250, 94, 3);">{{ role.title }}</h4>
-	                                <h5 class="mb-2">Their Role</h5>
+	                                <h5 class="mb-2 script-text">Their Role</h5>
 	                                <p class="mb-4">{{ role.description | safe }}</p>
 	                                <p class="mb-1"><i class="uil uil-location-pin-alt size-22"></i></p>
 	                                <div class="img-wrap img-2">
@@ -62,9 +62,9 @@
                                     <div class="container">
                                         <div class="row justify-content-center">
                                             <div class="col-sm-12">
-                                                <h5 class="mb-2">Operation Options</h5>
+                                                <h3 class="mb-2 script-text">Operation Options:</h3>
                                                 {% for operation in role.operation_options.all %}
-                                                <h5 class="mb-2">{{ operation }}</h5>
+                                                <h5 class="mb-2 script-text">{{ operation }}</h5>
                                                 {% endfor %}
                                             </div>
                                         </div>

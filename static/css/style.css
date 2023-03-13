@@ -1,3 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Charm:wght@700&family=Ruthie&display=swap');
+
+.script-titles {
+  font-family: 'Ruthie', cursive;
+}
+
+.script-text {
+  font-family: 'Charm', cursive;
+}
+
 
 .howto{
     margin-bottom: 150px;
@@ -18,6 +28,7 @@
 }
   
 .nav-link {
+    padding-right: 0px;
     display: block;
     text-align: center;
     padding: 16px;
@@ -118,7 +129,7 @@ a:hover {
   padding: 0;
   margin: 0 auto;
   cursor: pointer;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Charm', cursive;
   font-weight: 600;
   text-transform: uppercase;
   font-size: 14px;
@@ -226,7 +237,7 @@ a:hover {
   width: 100%;
   display: block;
   text-align: center;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Charm', cursive;
   font-weight: 700;
   letter-spacing: 3px;
   font-size: 22px;
@@ -265,7 +276,7 @@ a:hover {
   width: 100%;
   display: block;
   text-align: center;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Charm', cursive;
   font-weight: 400;
   letter-spacing: 1px;
   font-size: 36px;
@@ -281,7 +292,7 @@ a:hover {
   width: 100%;
   display: block;
   text-align: center;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Charm', cursive;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.2;
@@ -303,7 +314,7 @@ a:hover {
   color: #ffeba7;
   background-color: #102770;
   transition: all 200ms linear;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Charm', cursive;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.2;
