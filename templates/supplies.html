@@ -28,6 +28,57 @@
 <div class="section">
 	<div id="container" class="container" style="margin-bottom: 75px;">
 	    <div class="row full-height justify-content-center">
+            <h4 class="script-titles">Materials</h4>
+            <p class="script-text">
+                Supplies are self explanitory, the majority highlighted below are the materials needed to complete certain opertaions. the only exceptions to this are Siege equipment and ammunitions. 
+                These are not only needed for certain operations such as enchant weapons and armour but also will have a key function in the battle itself.
+            </p>
+            <p class="script-text">
+                Each operation will have a supply score that needs to be met in order for the operation to be ran. The supply score can be made up of any of the materials named in the supply list on the opertaion card.
+                For Example Reinforcing walls and gates, the supply score needed is 70, and the materials in the list are, Stone, Wood, Metal and misc. Meaning you may use 70 points of stone to complete the operation. Or
+                you may use 20 points of stone, 20 points of Wood, 20 points of metal and 10 points of Misc.
+            </p>
+            <h4 class="script-titles">Units</h4>
+            <p class="script-text">
+                Units have a couple of key roles within the Siege. In the preperation stage these units are your gold, you need certain units to run certain operations. Some operations will take units out of 
+                use for several days so managment is key. In every operation there is a unit score this works exactly the same as the supply score. You have to meet the unit score using the units in the List. These units will then be 
+                busy until the operation is complete.
+            </p>
+            <h5 class="script-text">Unit Health</h5>
+            <p class="script-text">
+                All units have a score which represents how many of that unit are available to you. 1 point = 10 units, so for example we have an Infantry score of 40 then we have 400 Infantry soldiers. This is true for all 
+                units except specialists. 1 = 1 when it comes to them. We calculate the health of a Battalion by multiplying their unit score by their health, each type of unit has its health per unit point as shown in their card.
+                For example if we take our 40 points of infantry which represents 400 soldiers. Infantry units have 30hp, so we times 40 by 30 to get a maximum health of 1200hp for all our troops. If we split our infantry to cover 2 fronts both Battalions will have 600hp.
+                if we want to send 50 soldiers or 5 infantry points to protect the civillains taking cover then they would have a total health of 150hp.
+            </p>
+            <h5 class="script-text">How units Attack</h5>
+            <p class="script-text">
+                Each type of unit also has their own actions and bonus actions as shown in their cards. In order to keep combat quick and easy to follow battalions do not roll to hit, instead they roll damage dependant on their size and the opposing force makes saving throws to reduce the losses.
+                The DC of the saving throw is 1.5x the unit score. For example we send 100 Archers to man a wall (10 Archer points), They fire a volley at an opposing battalion, that battalion will make a a DC 15 dexterity saving throw (10 x 1.5). If we sent 200 archers to the wall the DC would be 30.
+            </p>
+            <p class="script-text">
+                The Saving throw modifiers shown on the cards are the Dex and Con modifiers for a group with a unit score of 10. for every additional 5 points the Con mod increases by 1 and the Dex mod decreases by 1. A Battalion with a unit score of 5 or less increases their Dex mod by 1 and reduces there Con mod by 1.
+            </p>
+            <p class="script-text">
+                Infantry and archers may not be part of the same battalion however a battalion of infantry may be stationed with a battalion of archers in cases where the you want the infantry to keep the enemy away from your ranged units. 
+                In these situations should they come under fire the damage is split over the two groups by their ratio both then make saving throws in order to save from their portion of the damage. For example 2 Infantry units are protecting 8 Archer units, a volley fired at them deals 80 points of damage. that damage is split
+                16 points to the Infanty and 64 points to the Archers. 
+                Knights however can be placed within battalions of infantry or archers. The Damage dealt to a battalion with a knight unit in it is not split however. the knights must make seporate saving throws but both them and the unit they are with take full damage.  
+            </p>
+            <p class="script-text">
+                A battalions Damage output is based on the number of units that make it up. On each unit card it will say their base damage per 1 unit. For example for the infnatry this is 2d8. Therefore when we build our battalions and send 10 infantry units to guard the gate that battalion would deal 20d8 on its turn. 
+            </p>
+            <p class="script-text">
+                A key thing to remember is that it is vitally important to keep track of your Battalions health per unit. As Damage is calculated by the amount of units in a battalion. For example A Battalion made up of 10 units or 100 soldiers. In the beginning this battaliion would deal 20d8 as stated above.
+                However as this unit takes damage is damage output is also going to drop. Lets take the a volley again that deals 90 damage. that would take out 3 Units dropping the damage output of our next attack by 6d8. now if that volley dealt 110 damage we would still loose 6d8. Infantry have a unit health of 30. for every 30hp we loose, we loose 2d8. so only when that attack deals 120 damage, do we loose the next 2d8.
+            </p>
+            <p>
+                Battalions of units may also only attack enemy siege equipment, defences and other battalions. In some circumstances the DM may allow battalions to attack specialsts. I would allow this, if for instance a lich has rasied a Draco lich, the lich as a commander could not be targetted but the Draco Lich as a very large specialst could.
+            </p>
+            <p>
+                Finally Battalions act at the end of the commanders turn that is leading them as those commanders have a free action to command their battalions. If no commander is leading them then the Siege commander can give them orders at the end of their turn, however you can only give orders to one battalion per turn.
+                For this reason it is always a good idea to give a set of orders to units prior to the battle. When to fire, when to retreat, where to retreat to etc... The battalions will then carry these tasks out until told otherwise or if their moral falls too low.
+            </p>
         {% for sup in supply_list %}
         {% if sup.supply != 'None Required' %}
         <div class="sup-col col-lg-3" ontouchstart="this.classList.toggle('hover');">
