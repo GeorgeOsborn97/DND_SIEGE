@@ -63,6 +63,7 @@ class Role(models.Model):
     operation_options = models.ManyToManyField(
         Operation, related_name='ops'
     )
+    ability = models.TextField(default='to be added')
     cover_image = CloudinaryField('image', default='placeholder')
 
     def __str__(self):
