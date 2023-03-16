@@ -37,7 +37,7 @@ class Operation(models.Model):
     description = models.TextField()
     operation_benefit = models.TextField(default='to be added')
     resources_required = models.ManyToManyField(
-        Supplies, related_name='resources_req', 
+        Supplies, related_name='resources_req',
     )
     people_required = models.ManyToManyField(
         People, related_name='people_req'

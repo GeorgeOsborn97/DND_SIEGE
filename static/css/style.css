@@ -8,6 +8,10 @@
   font-family: 'Charm', cursive;
 }
 
+.accordian-click:hover {
+  transform: scale(1.2);
+  color: red;
+}
 
 .howto{
     margin-bottom: 150px;
