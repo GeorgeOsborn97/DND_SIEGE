@@ -3,23 +3,46 @@
 <div class="container text-center">
     <div class="row justify-content-center">
         <div class="col-xl-12">
-            <ul class="navigation">
-                <li class="nav-item col-lg-1">
-                    <a href="{% url 'home' %}" class="nav-link"><img src="https://res.cloudinary.com/duijsqmts/image/upload/c_scale,w_200/v1678207001/home-logo_crofr4.png" alt=""></a>
-                </li>
-                <li class="nav-item col-lg-1">
-                    <a href="{% url 'roles' %}" class="nav-link"><img src="https://res.cloudinary.com/duijsqmts/image/upload/c_scale,w_200/v1678207335/roles-logo_hg8uqn.png" alt=""></a>
-                </li>
-                <li class="nav-item col-lg-1">
-                    <a href="{% url 'operations' %}" class="nav-link"><img src="https://res.cloudinary.com/duijsqmts/image/upload/c_scale,w_200/v1678207087/operations-logo_rycmoe.png" alt=""></a>
-                </li>
-                <li class="nav-item col-lg-1">
-                    <a href="{% url 'supplies' %}" class="nav-link"><img src="https://res.cloudinary.com/duijsqmts/image/upload/c_scale,w_200/v1678207136/supplies-logo_lzkytt.png" alt=""></a>
-                </li>
-                <li class="nav-item col-lg-1">
-                    <a href="{% url 'moral' %}" class="nav-link"><img src="https://res.cloudinary.com/duijsqmts/image/upload/c_scale,w_200/v1678207208/moral-logo_ha36yp.png" alt=""></a>
-                </li>
-            </ul>
+            <nav class="navbar navbar-expand-lg bg-body-tertiary" style="padding: 0;">
+                <div class="container-fluid" style="min-height: 150px;">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <img style="min-height: 175px;"
+                            src="https://res.cloudinary.com/duijsqmts/image/upload/c_scale,w_200/v1678968715/menu-high-resolution-logo-color-on-transparent-background_1_bsqaau.png"
+                            alt="">
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarTogglerDemo01" style="min-height: 150px;">
+                        <ul class="navigation">
+                            <li class="nav-item col-lg-1">
+                                <a href="{% url 'home' %}" class="nav-link"><img
+                                        src="https://res.cloudinary.com/duijsqmts/image/upload/c_scale,w_200/v1678969194/home-high-resolution-logo-color-on-transparent-background_gbyzvh.png"
+                                        alt=""></a>
+                            </li>
+                            <li class="nav-item col-lg-1">
+                                <a href="{% url 'roles' %}" class="nav-link"><img
+                                        src="https://res.cloudinary.com/duijsqmts/image/upload/c_scale,w_200/v1678968957/roles-high-resolution-logo-color-on-transparent-background_plqglf.png"
+                                        alt=""></a>
+                            </li>
+                            <li class="nav-item col-lg-1">
+                                <a href="{% url 'operations' %}" class="nav-link"><img
+                                        src="https://res.cloudinary.com/duijsqmts/image/upload/c_scale,w_200/v1678969003/operations-high-resolution-logo-color-on-transparent-background_rylyzc.png"
+                                        alt=""></a>
+                            </li>
+                            <li class="nav-item col-lg-1">
+                                <a href="{% url 'supplies' %}" class="nav-link"><img
+                                        src="https://res.cloudinary.com/duijsqmts/image/upload/c_scale,w_200/v1678969047/supplies-high-resolution-logo-color-on-transparent-background_xhqnc5.png"
+                                        alt=""></a>
+                            </li>
+                            <li class="nav-item col-lg-1">
+                                <a href="{% url 'moral' %}" class="nav-link"><img
+                                        src="https://res.cloudinary.com/duijsqmts/image/upload/c_scale,w_200/v1678969093/moral-high-resolution-logo-color-on-transparent-background_walciw.png"
+                                        alt=""></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
         </div>
     </div>
 </div>
@@ -164,7 +187,7 @@
                                     <p class="script-text">
                                         It is a good idea to discuss the events of a previous day and plans for the next day with your fellow players. Enemy operations will be constantly ongoing and you may start to see evidence of this.
                                         If the enemy has got in and stolen supplies a change of tactic may be required for the next few days as you may no longer be able to afford an operation. Further more with the completion of your own 
-                                        operations you may decide a chnage in your approach is needed. If you stole the enemies plans you may realise you are reinforcing the wrong walls, maybe you learn of special units and can now design traps to deal with them. 
+                                        operations you may decide a change in your approach is needed. If you stole the enemies plans you may realise you are reinforcing the wrong walls, maybe you learn of special units and can now design traps to deal with them. 
                                     </p>
                                 </div>
                             </div>
@@ -181,8 +204,8 @@
                                 aria-labelledby="flush-headingSix" data-bs-parent="#accordionFlushExample">
                                 <div class="accordion-body">
                                     <p class="script-text">
-                                        The eve of battle now looms and time is up. No more operations can be ran so what's to do. It is now the time for the siege commander to assign players to units and units to positions.
-                                        Initial orders can also be given such as when to fire an intial volley or when to spring a trap.
+                                        The eve of battle now looms and time is up. No more operations can be ran so what's to do. It is now the time for the siege commander to build battalions, assign the other players to their battalions and units set their positions.
+                                        Initial orders can also be given such as when to fire an intial volley, when to spring a trap or when to retreat.
                                         "Note: To see how units and battalions work take a look at the supplies Page."
                                     </p>
                                 </div>
@@ -203,7 +226,7 @@
                                         The enemy appear on the horizon, marching towards your walls. Everybody rolls initiative. 
                                         The Siege Commanders will always go first. The Siege Commander with the higher initaitive kick us off.
                                         All commanders can use a free action to "Give Orders" A commander of a battlion may give orders to their units. A Siege commander can give orders to the entire army and players/other commanders
-                                        despite distance between them.
+                                        despite distance between them. Note: The Siege Commander can only give orders to one battalion per turn.
                                     </p>
                                     <p class="script-text">
                                         Moral is going to instantly start to take effect ensure you are familiar with the moral system. To read up on it go over to the Moral page.
@@ -211,7 +234,7 @@
                                     <p class="script-text">
                                         A player that is in charge of a battalion will role damage and saving throws for all units within that battalion. How Damage and Health works is all in the supplies page if you need a refresher.
                                         Initally battles will take a more top down perpestective, players will be rolling for vollies of arrows, saving throws against catapults and firing your own siege engines back at the enemy. Once an enemy battalion reaches the walls or breaches a position 
-                                        the DM may choose to take it into a more focused battle. These will be one on one or (more depending on the enemies) against a player. For instance the city watch commander is holding a gate house with a battlion of infantry that is breached by an enemy ram.
+                                        the DM may choose to take it into a more focused battle. These will be one on one or (more depending on the enemies) against a player. For instance the city watch commander is holding a gate house with a battalion of infantry that is breached by an enemy ram.
                                         On the city commanders turn we go to a battle between him and an enemy such as a goblin chief. The player and chief will battle in standard 5e rules one on one. At the end of each turn the player will role the damage of his battalion against the enemies battalion. and vic versa.
                                         If the % health or % Moral of a battalion is twice that of its enemies then units from that battalion may enter the fight alongside their commnader. (The battalion suffers no penelties for doing this)
                                         The player will have to keep on eye on not just his health but his battalions health as well as their moral for if the battalion starts to fall more and more enemies may enter the fight.
@@ -236,6 +259,7 @@
                                         The battle field is an ever shifting landscape and one decision can make or break the siege. If the battle starts to swing against you do not be afraid to retreat. A well prepared commander knows that
                                         sometimes you must regroup and reasses in the misdt of battle. If your walls are breached and its looking like your forces may get split retreating is a very viable option. 
                                         It's a Siege commanders responsibility to call a full retreat but As a commander of a battalion you may call your forces to retreat yourself though that may leave others vunerable.
+                                        It is a good idea to plan for a retreat, have a position to fall back to and make sure everyone knows when it's time to fall back.
                                     </p>
                                     <p class="script-text">
                                         If you however see a positive swing and feel victory is assured you have other decisions to make, do you ride out and cut down your enemy, or let them limp back and send a message of your might?
@@ -255,8 +279,8 @@
                                 aria-labelledby="flush-headingNine" data-bs-parent="#accordionFlushExample">
                                 <div class="accordion-body">
                                     <p class="script-text">
-                                        So the battle is over but what did the victory cost? was it worth the loss? what happens now? Or maybe the battles lost and you awken to find yourselves being carted off to a 
-                                        orc fighting pit, or the work the mines of an enemy faction or maybe you are off to be tortued for information. Whatever happens next is up to you.
+                                        So the battle is over did you emerge victorious, or have a suffered a might defeat? What were the enemy after, where will they go next? Or is time for you to push on and take the fight to the enemy.
+                                        What happens next is up to you!
                                     </p>
                                 </div>
                             </div>
