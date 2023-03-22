@@ -170,6 +170,143 @@
                     </div>
                 </div>
             </div>
+            <div class="accordian accordion-flush">
+                <div class="accordian-item">
+                    <h3 class="accordian-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                            <h1 class="script-titles accordian-click">Unit Tables</h1>
+                        </button>
+                    </h3>
+                    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            <h1 class="script-titles">Key Information</h1>
+                            <table class="table">
+                                <thead>
+                                  <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">Infantry</th>
+                                    <th scope="col">Archers</th>
+                                    <th scope="col">Knights</th>
+                                    <th scope="col">Spell Casters</th>
+                                    <th scope="col">Builders</th>
+                                    <th scope="col">Civs</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <th scope="row">Health per 1 Unit score</th>
+                                    <td>30</td>
+                                    <td>30</td>
+                                    <td>100</td>
+                                    <td>20</td>
+                                    <td>10</td>
+                                    <td>10</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">Damage output per 1 Unit score</th>
+                                    <td>2d8</td>
+                                    <td>2d6 / 2d4</td>
+                                    <td>2d12</td>
+                                    <td>2d8 (increases with stacks)</td>
+                                    <td>0 unless manning a Siege engine</td>
+                                    <td>0</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">Range</th>
+                                    <td>5ft</td>
+                                    <td>150/600 / 5ft</td>
+                                    <td>5ft</td>
+                                    <td>150ft</td>
+                                    <td>Look at Specific Siege engine for range</td>
+                                    <td>0</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">Bonus Actions available</th>
+                                    <td>2</td>
+                                    <td>2</td>
+                                    <td>3</td>
+                                    <td>2</td>
+                                    <td>1</td>
+                                    <td>0</td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            <h1 class="script-titles">Saving Throws</h1>
+                            <table class="table">
+                                <thead>
+                                  <tr>
+                                    <th scope="col">Ability</th>
+                                    <th scope="col">Infantry</th>
+                                    <th scope="col">Archers</th>
+                                    <th scope="col">Knights</th>
+                                    <th scope="col">Spell Casters</th>
+                                    <th scope="col">Builders</th>
+                                    <th scope="col">Civs</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <th scope="row">Dexterity - Unit Score 1-5</th>
+                                    <td>+3</td>
+                                    <td>+4</td>
+                                    <td>+2</td>
+                                    <td>+2</td>
+                                    <td>+2</td>
+                                    <td>0</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">Constitution - Unit Score 1-5</th>
+                                    <td>+1</td>
+                                    <td>0</td>
+                                    <td>+2</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">Dexterity - Unit Score 6-10</th>
+                                    <td>+2</td>
+                                    <td>+3</td>
+                                    <td>+1</td>
+                                    <td>+1</td>
+                                    <td>+1</td>
+                                    <td>0</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">Constitution - Unit Score 6-10</th>
+                                    <td>+2</td>
+                                    <td>+1</td>
+                                    <td>+3</td>
+                                    <td>+1</td>
+                                    <td>+1</td>
+                                    <td>0</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">Dexterity - Unit Score 11-15</th>
+                                    <td>+1</td>
+                                    <td>+2</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">Constitution - Unit Score 11-15</th>
+                                    <td>+3</td>
+                                    <td>+2</td>
+                                    <td>+4</td>
+                                    <td>+2</td>
+                                    <td>+2</td>
+                                    <td>0</td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
         {% for sup in supply_list %}
         {% if sup.supply != 'None Required' %}
         <div class="sup-col col-lg-3" ontouchstart="this.classList.toggle('hover');">
