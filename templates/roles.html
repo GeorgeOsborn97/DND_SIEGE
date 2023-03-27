@@ -51,6 +51,35 @@
 <div class="section over-hide">
 	<div id="role-container" class="container">
 	    <div class="row full-height justify-content-center">
+			<div class="accordian accordion-flush">
+                <div class="accordian-item">
+                    <h3 class="accordian-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                            <h1 class="script-titles accordian-click">Basic Commander Actions During Combat</h1>
+                        </button>
+                    </h3>
+                    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            <h1 class="script-titles">Your Actions, Moving Battalions and Battalion Actions</h1>
+                            <p class="script-text">
+                                You as a player can act normally on every turn, doing everything you would normally do when playing DnD. When you have taken a role you will gain an special ability that costs a Bonus action and that can be used once per battle.
+								Further more when leading Battalions all orders are seen as 'free actions' The units will carry out any orders given at the end of your turn. You may order troops to move, attack and take a bonus action all on one turn.
+								The specific Actions, bonus actions and movement speeds are found in the Supplies section. Players leading multiple battalions can order all battalions under their command on a single turn. The Siege Commander can order any Battalions that are without a player leading them on their turn.
+								Siege commanders may also order other players battalions on the same turn but may only order them to move. Should they do this the battlion will move immedietly and be no longer under the command of the player. This battalion may not take an action or bonus action until the siege commanders next turn.
+								A Siege commander may move battalions into the command of another player, as long as the unit is within 30ft of that player. However a batllion can not leave and join a player on the same turn.
+							</p>
+							<h1 class="script-titles">Splitting Battalions</h1>
+							<p class="script-text"> 
+								You may decide to split up a battalion such as splitting a battalion of 20 Infantry points to 2 Battalions of 10. All commanders including the Siege commander may only split 1 Battalion per turn and can split that battalion into a maximum of 3 smaller battalions This can be done at the start of the turn. 
+								A split Battalion retains the moral score of the Battalion it was once a part of. If the Battalion that was split by the Siege Commander was under the command of a player the new battalions retain that command unless moved by the Siege Commander. 
+								When merging Battalions they must be next to eachother (within 5ft), Battalions lead by different players may not merge. When merging Battalions the moral of the new battalion equals the battalion that ahad the bigger moral score.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
             {% for role in role_list %}
 	        <div class="col-xl-4 text-center align-self-center py-5">
                 <div class="section text-center py-5 py-md-0">

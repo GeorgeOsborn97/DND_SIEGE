@@ -98,8 +98,8 @@
                                 units except specialists. 1 = 1 when it comes to them. We calculate the health of a
                                 Battalion by multiplying their unit score by their health, each type of unit has its
                                 health per unit point as shown in their card.
-                                For example if we take our 40 points of infantry which represents 400 soldiers. Infantry
-                                units have 30hp, so we times 40 by 30 to get a maximum health of 1200hp for all our
+                                For example if we take our 40 points of infantry which represents 400 soldiers. 1 Infantry
+                                Unit Point has 30hp, so we times 40 by 30 to get a maximum health of 1200hp for all our
                                 troops. If we split our infantry to cover 2 fronts both Battalions will have 600hp.
                                 if we want to send 50 soldiers or 5 infantry points to protect the civillains taking
                                 cover then they would have a total health of 150hp.
@@ -130,9 +130,10 @@
                                 damage. For example 2 Infantry units are protecting 8 Archer units, a volley fired at
                                 them deals 80 points of damage. that damage is split
                                 16 points to the Infanty and 64 points to the Archers.
-                                Knights and spell casters however can be placed within battalions of infantry or archers. The Damage dealt
-                                to a battalion with a knight or spell caster unit in it is not split however. the knights or spell casters must make
-                                seporate saving throws but both them and the unit they are with take full damage.
+                                Knights and spell casters however can be placed within battalions of infantry or archers. In order to utilise their bonus actions. The Damage dealt
+                                to a battalion with a knight or spell caster unit in it is also split between the ratio of them and the battalion they are embedded in. The knights or spell casters must make
+                                separate saving throws. So in our example earlier lets say 1 Knight unit is within the infantry. We have a Ratio of 1-3 so the 16 points of damage is split 11 points to the infantry and 5 to the knights.
+                                In cases where a Damage requires rounding, Round up for the unit that makes up the majority and down for the other.
                             </p>
                             <p class="script-text">
                                 A battalions Damage output is based on the number of units that make it up. On each unit
@@ -144,12 +145,12 @@
                                 A key thing to remember is that it is vitally important to keep track of your Battalions
                                 health per unit. As Damage is calculated by the amount of units in a battalion. For
                                 example A Battalion made up of 10 units or 100 soldiers. In the beginning this
-                                battaliion would deal 20d8 as stated above.
+                                battaliion would deal 40d4 as stated above.
                                 However as this unit takes damage is damage output is also going to drop. Lets take the
                                 a volley again that deals 90 damage. that would take out 3 Units dropping the damage
                                 output of our next attack by 6d8. now if that volley dealt 110 damage we would still
-                                loose 6d8. Infantry have a unit health of 30. for every 30hp we loose, we loose 2d8. so
-                                only when that attack deals 120 damage, do we loose the next 2d8.
+                                loose 6d8. Infantry have a unit health of 30. for every 30hp we loose, we loose 12d4. so
+                                only when that attack deals 120 damage do we loose the next 4d4.
                             </p>
                             <p class="script-text">
                                 Battalions of units may also only attack enemy siege equipment, defences and other
@@ -160,11 +161,7 @@
                             <p class="script-text">
                                 Finally Battalions act at the end of the commanders turn that is leading them as those
                                 commanders have a free action to command their battalions. If no commander is leading
-                                them then the Siege commander can give them orders at the end of their turn, however you
-                                can only give orders to one battalion per turn.
-                                For this reason it is always a good idea to give a set of orders to units prior to the
-                                battle. When to fire, when to retreat, where to retreat to etc... The battalions will
-                                then carry these tasks out until told otherwise or if their moral falls too low.
+                                them then the Siege commander can give them orders at the end of their turn.
                             </p>
                         </div>
                     </div>
@@ -200,16 +197,25 @@
                                     <td>30</td>
                                     <td>30</td>
                                     <td>100</td>
-                                    <td>20</td>
+                                    <td>80</td>
                                     <td>10</td>
                                     <td>10</td>
                                   </tr>
                                   <tr>
+                                    <th scope="row">Speed</th>
+                                    <td>30ft</td>
+                                    <td>30ft</td>
+                                    <td>30ft</td>
+                                    <td>30ft</td>
+                                    <td>Look at Specific Siege engine for range</td>
+                                    <td>50ft</td>
+                                  </tr>
+                                  <tr>
                                     <th scope="row">Damage output per 1 Unit score</th>
-                                    <td>2d8</td>
+                                    <td>4d4</td>
                                     <td>2d6 / 2d4</td>
-                                    <td>2d12</td>
-                                    <td>2d8 (increases with stacks)</td>
+                                    <td>6d4</td>
+                                    <td>3d6 (increases with stacks)</td>
                                     <td>0 unless manning a Siege engine</td>
                                     <td>0</td>
                                   </tr>
@@ -223,12 +229,21 @@
                                     <td>0</td>
                                   </tr>
                                   <tr>
-                                    <th scope="row">Bonus Actions available</th>
-                                    <td>2</td>
-                                    <td>2</td>
-                                    <td>3</td>
-                                    <td>2</td>
+                                    <th scope="row">Minimum Battalion Size</th>
+                                    <td>5</td>
+                                    <td>5</td>
                                     <td>1</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td>0</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">DC Formula</th>
+                                    <td>1.5 x Battalion Unit Score</td>
+                                    <td>1.5 x Battalion Unit Score</td>
+                                    <td>10 x Battalion Unit Score + 5</td>
+                                    <td>10 x Battalion Unit Score + 5</td>
+                                    <td>DC 18 Dex Save if equiping a Siege engine</td>
                                     <td>0</td>
                                   </tr>
                                 </tbody>
