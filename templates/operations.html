@@ -74,6 +74,8 @@
 	                                <h4 class="mb-5" style="color: rgb(250, 94, 3);">{{ op.title }}</h4>
 	                                <h5 class="mb-2 script-text">Effect</h5>
 	                                <p class="mb-4">{{ op.description | safe }}</p>
+                                    <h5 class="mb-2 script-text">Benefit</h5>
+	                                <p class="mb-4">{{ op.operation_benefit | safe }}</p>
                                     {% if op.days_required == 100 %}
                                     <p class="mb-4">Days Required: Until Recalled</p>
                                     {% else %}
